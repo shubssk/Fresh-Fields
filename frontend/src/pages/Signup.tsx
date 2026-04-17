@@ -73,13 +73,13 @@ export default function Signup() {
               <TextField fullWidth label="Email"
                 {...register("email", { required: "Email required" })}
                 error={!!errors.email}
-                helperText={errors.email?.message as string}
+                helperText={errors.email?.message as string || ""}
               />
 
               <TextField fullWidth label="Password"
                 {...register("password", { required: "Password required" })}
                 error={!!errors.password}
-                helperText={errors.password?.message as string}
+                helperText={errors.password?.message as string || ""}
               />
 
               <TextField fullWidth label="Name"
