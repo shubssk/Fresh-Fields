@@ -79,7 +79,7 @@ export default function SignInSide() {
                 margin="normal"
                 {...register("email", { required: "Email required" })}
                 error={!!errors.email}
-                helperText={errors.email?.message as string}
+                helperText={errors.email?.message as string || ""}
               />
 
               <TextField
@@ -89,7 +89,7 @@ export default function SignInSide() {
                 margin="normal"
                 {...register("password", { required: "Password required" })}
                 error={!!errors.password}
-                helperText={errors.password?.message as string}
+                helperText={errors.password?.message as string || ""}
               />
 
               <Button fullWidth type="submit" variant="contained" sx={{ mt: 3 }}>
