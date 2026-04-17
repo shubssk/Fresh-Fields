@@ -89,7 +89,7 @@ export default function PersistentDrawerLeft() {
         <Grid container spacing={2}>
           {products.map((val) => (
             <Grid key={val._id}>
-              <Product product={val} />
+              <Product product={val} quantityInCart={0} />
             </Grid>
           ))}
         </Grid>
