@@ -1,0 +1,9 @@
+/* FooterComponent.css */
+.footer {
+  background-color: #64b367cd; /* Dark background */
+  color: #000000; /* White text */
+}
+
+.footer .text-muted {
+  color: rgba(0, 0, 0, 0.7) !important;
+}

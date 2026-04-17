@@ -1,0 +1,6 @@
+services:
+  db:
+    container_name: emandidb
+    image: mongodb/mongodb-community-server
+    ports:
+      - "27017:27017"

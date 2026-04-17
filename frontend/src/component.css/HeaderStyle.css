@@ -1,0 +1,35 @@
+.title {
+  color: black;
+}
+
+.logo-text {
+  font-family: "monospace";
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: black;
+  text-decoration: none;
+}
+
+.tagline {
+  margin-right: auto;
+  display: flex;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+}
+
+.shop-now-button {
+  background-color: #ff9800; /* Change to your desired button color */
+  color: white;
+  margin-left: 5rem;
+}
+
+.shop-now-button:hover {
+  background-color: #e68900; /* Darker shade for hover effect */
+}
+
+.user-avatar {
+  margin-left: 2rem;
+}

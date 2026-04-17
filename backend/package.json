@@ -1,0 +1,53 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --runInBand --testTimeout=100000",
+    "build:watch": "tsc --watch",
+    "build": "tsc",
+    "nodemon": "nodemon dist/index.js",
+    "dev": "concurrently \"npm:build:watch\" \"npm:nodemon\"",
+    "start": "node dist/index.js",
+    "husky:format": "pretty-quick --staged --verbose",
+    "prepare": "cd .. && husky backend/.husky",
+    "lint": "eslint .",
+    "db": "docker compose up -d",
+    "seed": "npm run build && node dist/seed.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "colorette": "^2.0.20",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.23.0",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/mongoose": "^5.11.97",
+    "@typescript-eslint/eslint-plugin": "^7.10.0",
+    "axios": "^1.7.2",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "pretty-quick": "^4.0.0",
+    "ts-jest": "^29.1.4",
+    "typescript": "^5.4.5"
+  }
+}
